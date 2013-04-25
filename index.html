@@ -1,0 +1,11 @@
+<doctype html>
+<html>
+    <div id="thing">
+    </div>
+    <script type="text/javascript" src="jam/require.js"></script>
+    <script type="text/javascript">
+        require(['./gardener-status'], function(gardener_status){
+            gardener_status('http://admin:admin@localhost:5984/dashboard', '/myapp/_design/myapp', 'thing');
+        });
+    </script>
+</html>
